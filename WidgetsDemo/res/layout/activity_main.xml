@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+    <com.droidek.core.uicomponents.GanttChartView android:id="@+id/ganttChart"
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        tools:context=".MainActivity" />
+
+  <LinearLayout android:orientation="vertical"
+      android:layout_alignParentBottom="true"
+      android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+      <View android:background="@drawable/devider_shape" android:layout_width="fill_parent" android:layout_height="1dp" />
+
+      <TextView android:id="@+id/taskName" android:hint="No task defined."
+        android:paddingTop="16dip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" />
+      <TextView android:id="@+id/taskStartDate" android:hint=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" />
+      <TextView android:id="@+id/taskDuration" android:hint=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" />
+  </LinearLayout>
+    
+</RelativeLayout>
